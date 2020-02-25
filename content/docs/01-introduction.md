@@ -12,7 +12,7 @@ title: Introduction
 
 ### Brew
 
-Brew is package manager for mac osx. https://brew.sh/
+Brew is package manager for mac osx. Provides a CLI to search and install common open source tooling. https://brew.sh/
 
 ```sh
 xcode-select --install
@@ -27,6 +27,10 @@ brew cask install iterm2
 ```
 
 ### Powerline fonts
+
+Powerline is a status line tool for shells and text editors. https://github.com/powerline/powerline
+
+These are common fonts patched to provide some of the lines styling.
 
 * Download and install a patched powerline font from: https://github.com/powerline/fonts
 * Select font from iTerm2
@@ -53,6 +57,9 @@ Set your default shell to fish in iterm2:
 Opening iterm2 should now display the fish shell prompt
 
 #### bob-the-fish
+
+This is a powerline like utility for fish. It uses the fonts installed earlier. https://github.com/oh-my-fish/theme-bobthefish
+
 ```sh
 omf install bobthefish
 ```
