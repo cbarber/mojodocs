@@ -8,6 +8,8 @@ parents: ['Get Started']
 
 [StandupHub](https://www.standuphub.com/) is a web service to easily track your tasks and their statuses for standup.
 
+#### Stack
+
 * PT issues: https://www.pivotaltracker.com/n/projects/1553257
 * Slack: #standuphub
 * Front-end
@@ -21,6 +23,19 @@ parents: ['Get Started']
 * Back-end (legacy)
   * https://github.com/mojotech/standup-api
 * docker: https://www.docker.com/
+
+#### Startup
+
+```sh
+cd standuphub-api-ex
+# start a pgsl instance on localhost:5432. You can use an OS service instead of docker
+docker-compose up db
+# start the phoenix server on localhost:4000 connected to localhost for database
+mix phx.server
+cd ../standuphub-web
+# start webpack server on localhost:3000 pointed to the local phoenix server the API server
+REACT_APP_API_SERVER=http://localhost:4000 yarn start
+```
 
 ### Helios
 
